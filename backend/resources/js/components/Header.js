@@ -37,11 +37,10 @@ position:relative;
 `
 
 const Logo= styled.div`
-margin-left: 120px;
+margin-left: 45%;
 
 `
 
 const Auth= styled.div`
-position:absolute;
-left:0;
+margin-left: 40%;
 `
