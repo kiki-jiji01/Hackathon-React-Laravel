@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <h1>テスト</h1>
+    <h1></h1>
     <div id="app">
        
     </div>
