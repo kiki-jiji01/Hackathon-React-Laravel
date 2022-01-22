@@ -1,24 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+        BrowserRouter,
+        Route,
+        Router,
+        Switch,
+      } from 'react-router-dom';
+import Header from './Header';
+import Main from './Main';
 
+ 
 function Home() {
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Example Component</div>
-
-                        <div className="card-body">I'm an example component!</div>
-                    </div>
-                </div>
-            </div>
+        <div style={{height:"100vh",width:"100vw" }}>
+            <Header/>
+            <Main/>
         </div>
+       
     );
 }
 
 export default Home;
 
 if (document.getElementById('app')) {
-    ReactDOM.render(<Home />, document.getElementById('app'));
-}
+    ReactDOM.render((
+        <BrowserRouter>
+          <Home />
+        </BrowserRouter>
+      ), document.getElementById('app'))}
