@@ -5340,7 +5340,7 @@ function Example() {
           className: "card",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "card-header",
-            children: "React\u5C0E\u5165\u3067\u304D\u305F\u308F\u306A\uFF1F\uFF1F"
+            children: "Example Component"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "card-body",
             children: "I'm an example component!"
