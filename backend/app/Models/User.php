@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'self_introduction'
     ];
 
     /**
@@ -41,4 +42,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function chatRooms(){
+        return $this->hasMany('App\Models\DriverPost');     
+    }
+
+    public function likes(){
+        return $this->hasMany('App\Models\Like');     
+    }
+
+    public function chatMessages(){
+        return $this->hasMany('App\Models\ChatMessage');     
+    }
 }
