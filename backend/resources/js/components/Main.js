@@ -24,6 +24,7 @@ function Main() {
   
 
   useEffect(() => {
+
     getRoomsData();
 },[])
 
@@ -32,6 +33,8 @@ function Main() {
     const data = new FormData()
     data.append('title', values.title)
     data.append('body', values.body)
+    data.append('user_id', user_id)
+    
     
 
     axios.post('/api/chatRooms/create',data)

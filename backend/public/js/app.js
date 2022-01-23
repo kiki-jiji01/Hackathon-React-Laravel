@@ -28268,6 +28268,7 @@ function Main() {
     var data = new FormData();
     data.append('title', values.title);
     data.append('body', values.body);
+    data.append('user_id', user_id);
     axios__WEBPACK_IMPORTED_MODULE_4___default().post('/api/chatRooms/create', data).then(function (res) {
       handleClose;
       console.log(res.data);

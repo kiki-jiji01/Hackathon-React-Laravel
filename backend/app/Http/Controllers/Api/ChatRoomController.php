@@ -31,7 +31,7 @@ class ChatRoomController extends Controller
         $chatRoom = new ChatRoom;
         $chatRoom->title = $request->title;
         $chatRoom->body = $request->body;
-        $chatRoom->user_id = auth()->id();
+        $chatRoom->user_id = $request->user_id;
         $chatRoom->save();
         return response()->json($chatRoom, 200);
     }
