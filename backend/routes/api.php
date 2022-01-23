@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'api'], function(){
     Route::get('/', 'App\Http\Controllers\Api\ChatRoomController@index');
     Route::get('/chatRooms/{id}', 'App\Http\Controllers\Api\ChatRoomController@show');
-    Route::post('/create', 'App\Http\Controllers\Api\ChatRoomController@store');
+    Route::post('/chatRomms/create', 'App\Http\Controllers\Api\ChatRoomController@store');
 });
