@@ -3,18 +3,18 @@ import {
     buildStyles
   } from "react-circular-progressbar";
 import styled from "styled-components"
-import { Grid} from '@material-ui/core';
+import { Grid, Box} from '@material-ui/core';
 
 function Graph() {
 
 
-    const color =   "#ef476f"
+    
 
 
     return (
      
          <Grid container spacing={6}>
-           <Grid item xs={3}>
+           <Grid item xs={3} >
                 <div style={{height: "20%", width: "20%"}}>
                     <CircularProgressbar
                     background
@@ -27,6 +27,7 @@ function Graph() {
                     />
                 </div>
             </Grid>
+
             <Grid item xs={3}>
              <div style={{height: "20%", width: "20%"}}>
                     <CircularProgressbar

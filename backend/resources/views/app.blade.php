@@ -4,10 +4,10 @@
         @php
             $user_id = Auth::id();
         @endphp
+        <script>
+            window.user_id = @json($user_id);
+        </script>
     @endauth
-    <script>
-        window.user_id = @json($user_id);
-    </script>
     <div id="app">
     </div>
 @endsection

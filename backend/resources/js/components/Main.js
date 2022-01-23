@@ -166,7 +166,7 @@ const SearchWrapper = styled.div`
 
 position: relative;
 padding: 21px 82px;
-margin-bottom: 5vh;
+margin-bottom: 10vh;
 `
 
 const SearchWrapper1 = styled.div`
@@ -193,5 +193,5 @@ const RoomWrapper = styled.div`
 
 width: 100%;
 height: 100%;
-
+margin-left: 36px;
 `

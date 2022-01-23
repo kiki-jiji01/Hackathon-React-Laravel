@@ -27937,7 +27937,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Graph() {
-  var color = "#ef476f";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
     container: true,
     spacing: 6,
@@ -28169,7 +28168,10 @@ function Home() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: {
       height: "100vh",
-      width: "100vw"
+      width: "100vw",
+      top: "-40vh",
+      position: "absolute",
+      zIndex: "-100"
     },
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {})
   });
@@ -28383,11 +28385,11 @@ function Main() {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);
 var MainWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\nmargin-top: 50vh;\n\n"])));
-var SearchWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\nposition: relative;\npadding: 21px 82px;\nmargin-bottom: 5vh;\n"])));
+var SearchWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\nposition: relative;\npadding: 21px 82px;\nmargin-bottom: 10vh;\n"])));
 var SearchWrapper1 = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\nmargin-left: 30%;\npadding: 21px 82px;\ndisplay: flex;\nposition:relative;\n"])));
 var Search = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\nwidth: 50%;\n\n"])));
 var Create = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\nposition: absolute;\nright:0;\n\n"])));
-var RoomWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n\nwidth: 100%;\nheight: 100%;\n\n"])));
+var RoomWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n\nwidth: 100%;\nheight: 100%;\nmargin-left: 36px;\n"])));
 
 /***/ }),
 
