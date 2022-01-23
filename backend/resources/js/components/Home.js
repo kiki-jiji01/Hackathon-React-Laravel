@@ -13,7 +13,7 @@ import Main from './Main';
 function Home() {
     return (
         <div style={{height:"100vh",width:"100vw" }}>
-            <Header/>
+            {/* <Header/> */}
             <Main/>
         </div>
        
