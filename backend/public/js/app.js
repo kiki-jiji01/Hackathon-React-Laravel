@@ -28272,7 +28272,6 @@ function Main() {
     data.append('body', values.body);
     data.append('user_id', user_id);
     axios__WEBPACK_IMPORTED_MODULE_4___default().post('/api/chatRooms/create', data).then(function (res) {
-      setOpen(false);
       console.log(res.data);
     })["catch"](function (error) {
       console.log(error);

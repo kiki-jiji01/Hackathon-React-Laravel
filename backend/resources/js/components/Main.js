@@ -39,7 +39,6 @@ function Main() {
 
     axios.post('/api/chatRooms/create',data)
         .then(res => {
-            setOpen(false)
             console.log(res.data)
         })
         .catch(error => {
