@@ -17,4 +17,5 @@ Route::group(['middleware' => 'api'], function(){
     Route::get('/', 'App\Http\Controllers\Api\ChatRoomController@index');
     Route::get('/chatRooms/{id}', 'App\Http\Controllers\Api\ChatRoomController@show');
     Route::post('/chatRooms/create', 'App\Http\Controllers\Api\ChatRoomController@store');
+    Route::post('/chatMessages/create', 'App\Http\Controllers\Api\ChatMessageController@store');
 });
