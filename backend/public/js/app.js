@@ -27927,164 +27927,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-circular-progressbar */ "./node_modules/react-circular-progressbar/dist/index.esm.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _RoomItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RoomItem */ "./resources/js/components/RoomItem.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-
-
-function Graph() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
+function Graph(_ref) {
+  var rooms = _ref.rooms;
+  var renderedRooms = rooms.map(function (room) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_RoomItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      room: room
+    });
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
     container: true,
     spacing: 6,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "20%",
-          width: "20%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#00C2D1",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "20%",
-          width: "20%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#05698B",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "80%",
-          width: "80%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#F8CC33",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "50%",
-          width: "60%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#F9E900",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "100%",
-          width: "100%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#0A1045",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "30%",
-          width: "30%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#7DD669",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "10%",
-          width: "10%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#ED33B9",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      item: true,
-      xs: 3,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        style: {
-          height: "20%",
-          width: "20%"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
-          background: true,
-          styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
-            backgroundColor: "#0A1045",
-            // textColor: "#fff",
-            // pathColor: "#fff",
-            trailColor: "transparent"
-          })
-        })
-      })
-    })]
+    children: renderedRooms
   });
 }
 
@@ -28200,14 +28060,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Paper/Paper.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/InputBase/InputBase.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Button/Button.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Modal/Modal.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Box/Box.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/TextField/TextField.js");
-/* harmony import */ var _mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Search */ "./node_modules/@mui/icons-material/Search.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Paper/Paper.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/InputBase/InputBase.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Modal/Modal.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Box/Box.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/TextField/TextField.js");
+/* harmony import */ var _mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/Search */ "./node_modules/@mui/icons-material/Search.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Graph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Graph */ "./resources/js/components/Graph.js");
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -28261,6 +28122,7 @@ function Main() {
       rooms = _useState2[0],
       setRooms = _useState2[1];
 
+  var history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useHistory)();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     getRoomsData();
   }, []);
@@ -28275,6 +28137,9 @@ function Main() {
       console.log(res.data);
     })["catch"](function (error) {
       console.log(error);
+    }).then(function (res) {
+      history.push("/");
+      console.log(res.data);
     });
     return function () {
       return null;
@@ -28313,7 +28178,7 @@ function Main() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(SearchWrapper, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(SearchWrapper1, {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Search, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__["default"], {
             component: "form",
             sx: {
               p: '2px 4px',
@@ -28321,7 +28186,7 @@ function Main() {
               alignItems: 'center',
               width: 400
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_8__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["default"], {
               sx: {
                 ml: 1,
                 flex: 1
@@ -28330,20 +28195,20 @@ function Main() {
             })]
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(Create, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["default"], {
             variant: "contained",
             onClick: handleOpen,
             children: "CREATE WORLD"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["default"], {
             open: open,
             onClose: handleClose,
             "aria-labelledby": "modal-modal-title",
             "aria-describedby": "modal-modal-description",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_12__["default"], {
               sx: style,
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
                 onSubmit: formik.handleSubmit,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
                   fullWidth: true,
                   id: "title",
                   name: "title",
@@ -28352,7 +28217,7 @@ function Main() {
                   onChange: formik.handleChange,
                   error: formik.touched.title && Boolean(formik.errors.title),
                   helperText: formik.touched.title && formik.errors.title
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
                   fullWidth: true,
                   id: "body",
                   name: "body",
@@ -28362,7 +28227,7 @@ function Main() {
                   onChange: formik.handleChange,
                   error: formik.touched.body && Boolean(formik.errors.body),
                   helperText: formik.touched.body && formik.errors.body
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["default"], {
                   variant: "contained",
                   fullWidth: true,
                   type: "submit",
@@ -28377,18 +28242,69 @@ function Main() {
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(RoomWrapper, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Graph__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Graph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        rooms: rooms
+      })
     })]
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);
-var MainWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\nmargin-top: 50vh;\n\n"])));
-var SearchWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\nposition: relative;\npadding: 21px 82px;\nmargin-bottom: 10vh;\n"])));
-var SearchWrapper1 = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\nmargin-left: 30%;\npadding: 21px 82px;\ndisplay: flex;\nposition:relative;\n"])));
-var Search = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\nwidth: 50%;\n\n"])));
-var Create = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\nposition: absolute;\nright:0;\n\n"])));
-var RoomWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n\nwidth: 100%;\nheight: 100%;\nmargin-left: 36px;\n"])));
+var MainWrapper = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\nmargin-top: 50vh;\n\n"])));
+var SearchWrapper = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\nposition: relative;\npadding: 21px 82px;\nmargin-bottom: 10vh;\n"])));
+var SearchWrapper1 = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\nmargin-left: 30%;\npadding: 21px 82px;\ndisplay: flex;\nposition:relative;\n"])));
+var Search = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\nwidth: 50%;\n\n"])));
+var Create = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\nposition: absolute;\nright:0;\n\n"])));
+var RoomWrapper = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n\nwidth: 100%;\nheight: 100%;\nmargin-left: 36px;\n"])));
+
+/***/ }),
+
+/***/ "./resources/js/components/RoomItem.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/RoomItem.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-circular-progressbar */ "./node_modules/react-circular-progressbar/dist/index.esm.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function RoomItem(_ref) {
+  var room = _ref.room;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    item: true,
+    xs: 3,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      style: {
+        height: "20%",
+        width: "20%"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.CircularProgressbar, {
+        background: true,
+        styles: (0,react_circular_progressbar__WEBPACK_IMPORTED_MODULE_0__.buildStyles)({
+          backgroundColor: "#00C2D1",
+          // textColor: "#fff",
+          // pathColor: "#fff",
+          trailColor: "transparent"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        children: room.title
+      })]
+    })
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RoomItem);
 
 /***/ }),
 

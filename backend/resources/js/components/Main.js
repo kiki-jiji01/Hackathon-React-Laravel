@@ -5,6 +5,7 @@ import {
         Route,
         Router,
         Switch,
+        useHistory
       } from 'react-router-dom';
 import { Button, FormControl, InputLabel, FilledInput, InputAdornment,Paper,InputBase, Box,TextField,Modal } from '@material-ui/core';
 import SearchIcon from '@mui/icons-material/Search';
@@ -21,7 +22,7 @@ function Main() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [rooms, setRooms] = useState([]);
-  
+  const history = useHistory();
 
   useEffect(() => {
 
@@ -44,7 +45,11 @@ function Main() {
         .catch(error => {
           
           console.log(error);
-         });
+         })
+        .then(res => {
+          history.push(`/`)
+          console.log(res.data)
+     　　 })
         return () => null
   }
 
@@ -145,7 +150,7 @@ function Main() {
               </SearchWrapper1>
           </SearchWrapper>
           <RoomWrapper>
-            <Graph/>
+            <Graph rooms={rooms}/>
           </RoomWrapper>
       </MainWrapper>
        

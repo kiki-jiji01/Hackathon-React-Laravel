@@ -15,6 +15,7 @@ function Home() {
         <div style={{height:"100vh",width:"100vw", top: "-40vh", position: "absolute" , zIndex: "-100"}}>
             {/* <Header/> */}
             <Main/>
+           
         </div>
        
     );
