@@ -13,8 +13,12 @@ class Tag extends Model
 
     protected $guarded = array('id');
 
-    public function categories(): BelongsToMany
-    {
-        return $this->belongsToMany(ChatRoom::class);
+    public function chatRooms(){
+        return $this->belongsToMany(
+            'App\Models\ChatRoom',
+            'chat_room_tag',
+            'tag_id',
+            'chat_room_id'
+        );
     }
 }
