@@ -17623,6 +17623,518 @@ var _utils = __webpack_require__(/*! @mui/material/utils */ "./node_modules/@mui
 
 /***/ }),
 
+/***/ "./node_modules/@mui/material/Card/Card.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@mui/material/Card/Card.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/chainPropTypes.js");
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/composeClasses/composeClasses.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _Paper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Paper */ "./node_modules/@mui/material/Paper/Paper.js");
+/* harmony import */ var _cardClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cardClasses */ "./node_modules/@mui/material/Card/cardClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["className", "raised"];
+
+
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root']
+  };
+  return (0,_mui_base__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _cardClasses__WEBPACK_IMPORTED_MODULE_6__.getCardUtilityClass, classes);
+};
+
+const CardRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])(_Paper__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  name: 'MuiCard',
+  slot: 'Root',
+  overridesResolver: (props, styles) => styles.root
+})(() => {
+  return {
+    overflow: 'hidden'
+  };
+});
+const Card = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Card(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_9__["default"])({
+    props: inProps,
+    name: 'MuiCard'
+  });
+
+  const {
+    className,
+    raised = false
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded);
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    raised
+  });
+
+  const classes = useUtilityClasses(ownerState);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(CardRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
+    elevation: raised ? 8 : undefined,
+    ref: ref,
+    ownerState: ownerState
+  }, other));
+});
+ true ? Card.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string),
+
+  /**
+   * If `true`, the card will use raised styling.
+   * @default false
+   */
+  raised: (0,_mui_utils__WEBPACK_IMPORTED_MODULE_11__["default"])((prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool), props => {
+    if (props.raised && props.variant === 'outlined') {
+      return new Error('MUI: Combining `raised={true}` with `variant="outlined"` has no effect.');
+    }
+
+    return null;
+  }),
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_10___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object)])
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Card/cardClasses.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@mui/material/Card/cardClasses.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getCardUtilityClass": () => (/* binding */ getCardUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/generateUtilityClasses/generateUtilityClasses.js");
+
+function getCardUtilityClass(slot) {
+  return (0,_mui_base__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiCard', slot);
+}
+const cardClasses = (0,_mui_base__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiCard', ['root']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cardClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/CardContent/CardContent.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@mui/material/CardContent/CardContent.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/composeClasses/composeClasses.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _cardContentClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cardContentClasses */ "./node_modules/@mui/material/CardContent/cardContentClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["className", "component"];
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root']
+  };
+  return (0,_mui_base__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _cardContentClasses__WEBPACK_IMPORTED_MODULE_6__.getCardContentUtilityClass, classes);
+};
+
+const CardContentRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
+  name: 'MuiCardContent',
+  slot: 'Root',
+  overridesResolver: (props, styles) => styles.root
+})(() => {
+  return {
+    padding: 16,
+    '&:last-child': {
+      paddingBottom: 24
+    }
+  };
+});
+const CardContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function CardContent(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_8__["default"])({
+    props: inProps,
+    name: 'MuiCardContent'
+  });
+
+  const {
+    className,
+    component = 'div'
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded);
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    component
+  });
+
+  const classes = useUtilityClasses(ownerState);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(CardContentRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    as: component,
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
+    ownerState: ownerState,
+    ref: ref
+  }, other));
+});
+ true ? CardContent.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().elementType),
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_9___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_9___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_9___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object)])
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CardContent);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/CardContent/cardContentClasses.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@mui/material/CardContent/cardContentClasses.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getCardContentUtilityClass": () => (/* binding */ getCardContentUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/generateUtilityClasses/generateUtilityClasses.js");
+
+function getCardContentUtilityClass(slot) {
+  return (0,_mui_base__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiCardContent', slot);
+}
+const cardContentClasses = (0,_mui_base__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiCardContent', ['root']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cardContentClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Paper/Paper.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@mui/material/Paper/Paper.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/chainPropTypes.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/integerPropType.js");
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/composeClasses/composeClasses.js");
+/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/system */ "./node_modules/@mui/system/esm/colorManipulator.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@mui/material/styles/useTheme.js");
+/* harmony import */ var _paperClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./paperClasses */ "./node_modules/@mui/material/Paper/paperClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["className", "component", "elevation", "square", "variant"];
+
+
+
+
+
+
+
+
+
+ // Inspired by https://github.com/material-components/material-components-ios/blob/bca36107405594d5b7b16265a5b0ed698f85a5ee/components/Elevation/src/UIColor%2BMaterialElevation.m#L61
+
+
+
+const getOverlayAlpha = elevation => {
+  let alphaValue;
+
+  if (elevation < 1) {
+    alphaValue = 5.11916 * elevation ** 2;
+  } else {
+    alphaValue = 4.5 * Math.log(elevation + 1) + 2;
+  }
+
+  return (alphaValue / 100).toFixed(2);
+};
+
+const useUtilityClasses = ownerState => {
+  const {
+    square,
+    elevation,
+    variant,
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root', variant, !square && 'rounded', variant === 'elevation' && `elevation${elevation}`]
+  };
+  return (0,_mui_base__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _paperClasses__WEBPACK_IMPORTED_MODULE_6__.getPaperUtilityClass, classes);
+};
+
+const PaperRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
+  name: 'MuiPaper',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.root, styles[ownerState.variant], !ownerState.square && styles.rounded, ownerState.variant === 'elevation' && styles[`elevation${ownerState.elevation}`]];
+  }
+})(({
+  theme,
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  backgroundColor: theme.palette.background.paper,
+  color: theme.palette.text.primary,
+  transition: theme.transitions.create('box-shadow')
+}, !ownerState.square && {
+  borderRadius: theme.shape.borderRadius
+}, ownerState.variant === 'outlined' && {
+  border: `1px solid ${theme.palette.divider}`
+}, ownerState.variant === 'elevation' && (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  boxShadow: theme.shadows[ownerState.elevation]
+}, theme.palette.mode === 'dark' && {
+  backgroundImage: `linear-gradient(${(0,_mui_system__WEBPACK_IMPORTED_MODULE_8__.alpha)('#fff', getOverlayAlpha(ownerState.elevation))}, ${(0,_mui_system__WEBPACK_IMPORTED_MODULE_8__.alpha)('#fff', getOverlayAlpha(ownerState.elevation))})`
+})));
+const Paper = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Paper(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_9__["default"])({
+    props: inProps,
+    name: 'MuiPaper'
+  });
+
+  const {
+    className,
+    component = 'div',
+    elevation = 1,
+    square = false,
+    variant = 'elevation'
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+    component,
+    elevation,
+    square,
+    variant
+  });
+
+  const classes = useUtilityClasses(ownerState);
+
+  if (true) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const theme = (0,_styles_useTheme__WEBPACK_IMPORTED_MODULE_10__["default"])();
+
+    if (theme.shadows[elevation] === undefined) {
+      console.error([`MUI: The elevation provided <Paper elevation={${elevation}}> is not available in the theme.`, `Please make sure that \`theme.shadows[${elevation}]\` is defined.`].join('\n'));
+    }
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(PaperRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    as: component,
+    ownerState: ownerState,
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
+    ref: ref
+  }, other));
+});
+ true ? Paper.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType),
+
+  /**
+   * Shadow depth, corresponds to `dp` in the spec.
+   * It accepts values between 0 and 24 inclusive.
+   * @default 1
+   */
+  elevation: (0,_mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"])(_mui_utils__WEBPACK_IMPORTED_MODULE_13__["default"], props => {
+    const {
+      elevation,
+      variant
+    } = props;
+
+    if (elevation > 0 && variant === 'outlined') {
+      return new Error(`MUI: Combining \`elevation={${elevation}}\` with \`variant="${variant}"\` has no effect. Either use \`elevation={0}\` or use a different \`variant\`.`);
+    }
+
+    return null;
+  }),
+
+  /**
+   * If `true`, rounded corners are disabled.
+   * @default false
+   */
+  square: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)]),
+
+  /**
+   * The variant to use.
+   * @default 'elevation'
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOf(['elevation', 'outlined']), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string)])
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Paper);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Paper/paperClasses.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@mui/material/Paper/paperClasses.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getPaperUtilityClass": () => (/* binding */ getPaperUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/generateUtilityClasses/generateUtilityClasses.js");
+
+function getPaperUtilityClass(slot) {
+  return (0,_mui_base__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiPaper', slot);
+}
+const paperClasses = (0,_mui_base__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiPaper', ['root', 'rounded', 'outlined', 'elevation', 'elevation0', 'elevation1', 'elevation2', 'elevation3', 'elevation4', 'elevation5', 'elevation6', 'elevation7', 'elevation8', 'elevation9', 'elevation10', 'elevation11', 'elevation12', 'elevation13', 'elevation14', 'elevation15', 'elevation16', 'elevation17', 'elevation18', 'elevation19', 'elevation20', 'elevation21', 'elevation22', 'elevation23', 'elevation24']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (paperClasses);
+
+/***/ }),
+
 /***/ "./node_modules/@mui/material/SvgIcon/SvgIcon.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@mui/material/SvgIcon/SvgIcon.js ***!
@@ -18899,6 +19411,36 @@ const styled = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__["default"])({
   rootShouldForwardProp
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styled);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/styles/useTheme.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@mui/material/styles/useTheme.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useTheme)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/system */ "./node_modules/@mui/system/esm/useTheme.js");
+/* harmony import */ var _defaultTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultTheme */ "./node_modules/@mui/material/styles/defaultTheme.js");
+
+
+
+function useTheme() {
+  const theme = (0,_mui_system__WEBPACK_IMPORTED_MODULE_1__["default"])(_defaultTheme__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+  if (true) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    react__WEBPACK_IMPORTED_MODULE_0__.useDebugValue(theme);
+  }
+
+  return theme;
+}
 
 /***/ }),
 
@@ -21847,6 +22389,27 @@ function capitalize(string) {
 
 /***/ }),
 
+/***/ "./node_modules/@mui/utils/esm/chainPropTypes.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@mui/utils/esm/chainPropTypes.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ chainPropTypes)
+/* harmony export */ });
+function chainPropTypes(propType1, propType2) {
+  if (false) {}
+
+  return function validate(...args) {
+    return propType1(...args) || propType2(...args);
+  };
+}
+
+/***/ }),
+
 /***/ "./node_modules/@mui/utils/esm/createChainedFunction.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@mui/utils/esm/createChainedFunction.js ***!
@@ -22051,6 +22614,87 @@ function getDisplayName(Component) {
 
   return undefined;
 }
+
+/***/ }),
+
+/***/ "./node_modules/@mui/utils/esm/integerPropType.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@mui/utils/esm/integerPropType.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getTypeByValue": () => (/* binding */ getTypeByValue),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function getTypeByValue(value) {
+  const valueType = typeof value;
+
+  switch (valueType) {
+    case 'number':
+      if (Number.isNaN(value)) {
+        return 'NaN';
+      }
+
+      if (!Number.isFinite(value)) {
+        return 'Infinity';
+      }
+
+      if (value !== Math.floor(value)) {
+        return 'float';
+      }
+
+      return 'number';
+
+    case 'object':
+      if (value === null) {
+        return 'null';
+      }
+
+      return value.constructor.name;
+
+    default:
+      return valueType;
+  }
+} // IE 11 support
+
+function ponyfillIsInteger(x) {
+  // eslint-disable-next-line no-restricted-globals
+  return typeof x === 'number' && isFinite(x) && Math.floor(x) === x;
+}
+
+const isInteger = Number.isInteger || ponyfillIsInteger;
+
+function requiredInteger(props, propName, componentName, location) {
+  const propValue = props[propName];
+
+  if (propValue == null || !isInteger(propValue)) {
+    const propType = getTypeByValue(propValue);
+    return new RangeError(`Invalid ${location} \`${propName}\` of type \`${propType}\` supplied to \`${componentName}\`, expected \`integer\`.`);
+  }
+
+  return null;
+}
+
+function validator(props, propName, ...other) {
+  const propValue = props[propName];
+
+  if (propValue === undefined) {
+    return null;
+  }
+
+  return requiredInteger(props, propName, ...other);
+}
+
+function validatorNoop() {
+  return null;
+}
+
+validator.isRequired = requiredInteger;
+validatorNoop.isRequired = validatorNoop;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ( false ? 0 : validator);
 
 /***/ }),
 
@@ -27916,6 +28560,145 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/ChatRoom.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/ChatRoom.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/TextField/TextField.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _mui_material_Card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/Card */ "./node_modules/@mui/material/Card/Card.js");
+/* harmony import */ var _mui_material_CardContent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/CardContent */ "./node_modules/@mui/material/CardContent/CardContent.js");
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api */ "./resources/js/components/api.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Message__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Message */ "./resources/js/components/Message.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Chatroom() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      messages = _useState2[0],
+      setMessages = _useState2[1];
+
+  var history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useHistory)();
+
+  var _useParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useParams)(),
+      id = _useParams.id;
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
+    getMessageData();
+  }, []);
+
+  var handleSubmit = function handleSubmit(values) {
+    console.log(values);
+    var data = new FormData();
+    data.append('message', values.message);
+    data.append('chat_room_id', id);
+    data.append('user_id', user_id);
+    axios__WEBPACK_IMPORTED_MODULE_3___default().post('/api/chatMessages/create', data).then(function (res) {
+      console.log(res.data);
+    })["catch"](function (error) {
+      console.log(error);
+    }); //     .then(res => {
+    //       history.push(`/`)
+    //  　　 })
+
+    return function () {
+      return null;
+    };
+  };
+
+  var formik = (0,formik__WEBPACK_IMPORTED_MODULE_0__.useFormik)({
+    initialValues: {
+      message: ''
+    },
+    onSubmit: handleSubmit
+  });
+
+  var getMessageData = function getMessageData() {
+    axios__WEBPACK_IMPORTED_MODULE_3___default().get(_api__WEBPACK_IMPORTED_MODULE_1__.API.chatrooms.retrieve(id)).then(function (res) {
+      console.log(res.data);
+      setMessages(res.data[1]);
+    })["catch"](function () {
+      console.log('通信に失敗しました');
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_mui_material_Card__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    sx: {
+      maxWidth: 1220,
+      borderRadius: 0,
+      boxShadow: 0
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Message__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        messages: messages
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      sx: {
+        backgroundColor: "gray"
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
+        onSubmit: formik.handleSubmit,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          fullWidth: true,
+          id: "message",
+          name: "message",
+          label: "message",
+          value: formik.values.message,
+          onChange: formik.handleChange,
+          error: formik.touched.message && Boolean(formik.errors.message),
+          helperText: formik.touched.message && formik.errors.message
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          variant: "contained",
+          fullWidth: true,
+          type: "submit",
+          children: "Send"
+        })]
+      })
+    })]
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Chatroom);
+
+/***/ }),
+
 /***/ "./resources/js/components/Graph.js":
 /*!******************************************!*\
   !*** ./resources/js/components/Graph.js ***!
@@ -28013,10 +28796,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
-/* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main */ "./resources/js/components/Main.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _ChatRoom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ChatRoom */ "./resources/js/components/ChatRoom.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Main */ "./resources/js/components/Main.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -28025,24 +28812,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Home() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     style: {
       height: "100vh",
       width: "100vw",
-      top: "-40vh",
-      position: "absolute",
       zIndex: "-100"
     },
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Switch, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+          path: "/chatRooms/:id",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_ChatRoom__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+          path: "/",
+          children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Main__WEBPACK_IMPORTED_MODULE_4__["default"], {}), " "]
+        })]
+      })
+    })
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
 if (document.getElementById('app')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Home, {})
-  }), document.getElementById('app'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Home, {}), document.getElementById('app'));
 }
 
 /***/ }),
@@ -28259,6 +29052,65 @@ var RoomWrapper = styled_components__WEBPACK_IMPORTED_MODULE_14__["default"].div
 
 /***/ }),
 
+/***/ "./resources/js/components/Message.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Message.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _MessageItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MessageItem */ "./resources/js/components/MessageItem.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function Message(_ref) {
+  var messages = _ref.messages;
+  var renderedMessages = messages.map(function (message) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_MessageItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      message: message
+    });
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    children: renderedMessages
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Message);
+
+/***/ }),
+
+/***/ "./resources/js/components/MessageItem.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/MessageItem.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function MessageItem(_ref) {
+  var message = _ref.message;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+      children: message.message
+    })
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MessageItem);
+
+/***/ }),
+
 /***/ "./resources/js/components/RoomItem.js":
 /*!*********************************************!*\
   !*** ./resources/js/components/RoomItem.js ***!
@@ -28305,6 +29157,31 @@ function RoomItem(_ref) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RoomItem);
+
+/***/ }),
+
+/***/ "./resources/js/components/api.js":
+/*!****************************************!*\
+  !*** ./resources/js/components/api.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "API": () => (/* binding */ API)
+/* harmony export */ });
+var apiURL = "/api";
+var API = {
+  chatrooms: {
+    // list: `${apiURL}/countries/`,
+    // create: `${apiURL}/create-countries/`,
+    retrieve: function retrieve(id) {
+      return "".concat(apiURL, "/chatRooms/").concat(id, "/");
+    } // update: id => `${apiURL}/countries/${id}/update/`,
+
+  }
+};
 
 /***/ }),
 
