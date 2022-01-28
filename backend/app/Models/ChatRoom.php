@@ -13,9 +13,13 @@ class ChatRoom extends Model
 
     protected $guarded = array('id');
 
-    public function categories(): BelongsToMany
-    {
-        return $this->belongsToMany(Tag::class);
+    public function tags(){
+        return $this->belongsToMany(
+            'App\Models\Tag',
+            'chat_room_tag',
+            'chat_room_id',
+            'tag_id'
+        );
     }
 
     public function user(){

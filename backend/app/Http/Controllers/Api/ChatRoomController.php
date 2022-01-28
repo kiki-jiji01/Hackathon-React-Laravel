@@ -29,10 +29,29 @@ class ChatRoomController extends Controller
     public function store(Request $request)
     {   
         $chatRoom = new ChatRoom;
+
         $chatRoom->title = $request->title;
         $chatRoom->body = $request->body;
         $chatRoom->user_id = $request->user_id;
         $chatRoom->save();
+
+        // #(ハッシュタグ)で始まる単語を取得。結果は、$matchに多次元配列で代入される。
+        preg_match_all('/#([a-zA-z0-9０-９ぁ-んァ-ヶー一-龠]+)/u', $request->tags, $match);
+
+        // $match[0]に#(ハッシュタグ)あり、$match[1]に#(ハッシュタグ)なしの結果が入ってくるので、$match[1]で#(ハッシュタグ)なしの結果のみを使います。
+        $tags = [];
+        foreach ($match[1] as $tag) {
+            $record = Tag::firstOrCreate(['name' => $tag]); // firstOrCreateメソッドで、tags_tableのnameカラムに該当のない$tagは新規登録される。
+            array_push($tags, $record); // $recordを配列に追加します(=$tags)
+        };
+
+        // 投稿に紐付けされるタグのidを配列化
+        $tags_id = [];
+        foreach ($tags as $tag) {
+            array_push($tags_id, $tag['id']);
+        };
+        $chatRoom->tags()->attach($tags_id); // 投稿ににタグ付するために、attachメソッドをつかい、モデルを結びつけている中間テーブルにレコードを挿入します。
+
         return response()->json($chatRoom, 200);
     }
 }
